@@ -1,7 +1,5 @@
-(ns abjure.views.blog-post
-  (:use noir-core
-        hiccup.core
-        hiccup.page-helpers))
+(ns abjure.views.blogpost
+  (:use [noir.core]))
 
 ;; Page structure 
 
@@ -9,4 +7,4 @@
   ([:h1 title]
    [:div.author "by " author]
    [:div.datetime "on " date]
-   [:div.conteny body]))  
+   [:div.content body]))
